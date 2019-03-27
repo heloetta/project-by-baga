@@ -2,6 +2,7 @@
 ### :smiley:
 :hammer:
 # :trollface:
+:horse:
 ## This is a 1340 project
 ## We are going to choose Accounting System
 ## 1.Problem statement
