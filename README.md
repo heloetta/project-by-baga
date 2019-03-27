@@ -1,17 +1,4 @@
-# project-by-baga
-## hege is a hentai!!
-### :smiley:
-:horse:
-:rabbit:
-:trollface:
-##### :astonished:
-# faQ
-## This is a 1340 project
-## We are going to choose Accounting System
-## 1.Problem statement
-     - Problem cause
-         We want to make an accounting system to help ourselves to better manage our money.
-     - brief introduction
+
          
 ## 2.Problem settings
      -Basic recording part
