@@ -8,4 +8,6 @@
 # faQ
 ## This is a 1340 project
 ## We are going to choose Accounting System
-## - Problem statement
+## 1.Problem statement
+     - Problem cause
+     - brief introduction
