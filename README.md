@@ -1,5 +1,5 @@
 # project-by-baga
-### :smiley:
+# :smiley:
 :hammer:
 ###### :trollface::horse:
 ## This is a 1340 project
