@@ -22,4 +22,3 @@
         2.analysis of financial state
         monthly income/monthly outcome/percentage of types/(consumption graph?)
         3.budget setting(alert)
-     -User Interface(?)
