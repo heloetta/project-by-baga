@@ -2,6 +2,14 @@
 #include<fstream>
 #include<string>
 using namespace std;
+struct record{
+	double amount;
+	int date;
+	string type;
+	bool IO;
+	string account;
+	string remark;		
+};
 
 void print_menu()
 {
