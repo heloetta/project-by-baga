@@ -15,6 +15,7 @@
         basic information: amount, date, types of income or expense (e.g. food, game,salary, etc.), account (e.g cash, bank card, credit card, etc.),remarks; 
         the records should
         edit
+        delete
         record
         view
      -advanced functions
