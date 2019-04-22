@@ -11,13 +11,26 @@ struct record{
 	string remark;		
 };
 
+//a function to test whether to send alert after 1.2.3.6.
+bool ifalert()
+{
+	
+}
+//end of the function
+
+//a function to view the records
+void
+//end of this function
+
 void print_menu()
 {
 	cout<<"MAIN MENU:"<<endl;
 	cout<<"1.add new records"<<endl;
 	cout<<"2.edit records"<<endl;
-	cout<<"3.view records"<<endl;
-	cout<<"4.burget setting"<<endl;
+	cout<<"3.delete records"<<endl;
+	cout<<"4.view records"<<endl;
+	cout<<"5.analyze financial state"<<endl;
+	cout<<"6.burget setting"<<endl;
 	cout<<"0.quit"<<endl;
 	cout<<"Please enter the number you choose: ";
 }
@@ -56,7 +69,7 @@ int main()
 		else if(choice == "4")
 		{
 			cout<<"4"<<endl;
-			//add function here
+			
 			cout<<endl;
 		}
 		else
