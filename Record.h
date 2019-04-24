@@ -1,3 +1,5 @@
+#ifndef RECORD_H
+#define RECORD_H
 #include<iostream>
 #include<fstream>
 #include"Record.h"
@@ -14,3 +16,4 @@ public:
 //e.g. 1.Alipay 2.cash 3.credit card .......
 	string remark;
 };
+#endif
