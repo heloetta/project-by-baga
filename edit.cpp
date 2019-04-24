@@ -36,7 +36,7 @@ void edit(int ID){
             a[counter]=ed;
             }
             }
-            for(i=0;i<=6;i++){
+            for(int i=0;i<=6;i++){
             b[linecounter]=b[linecounter]+a[i]+" ";
             }
         }
@@ -49,7 +49,7 @@ void edit(int ID){
       cout << "Error in file opening!"<< endl;
       exit(1);
    }
-    for(i=0;i<linecounter;i++){
+    for(int i=0;i<linecounter;i++){
     fout <<b[i]<<endl;
     }
     fout.close();
