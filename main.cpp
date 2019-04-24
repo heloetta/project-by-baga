@@ -1,26 +1,9 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include "Record.h"
+#include "add.h"
 using namespace std;
-struct record{
-	double amount;
-	int date;
-	string type;
-	bool IO;
-	string account;
-	string remark;		
-};
-
-//a function to test whether to send alert after 1.2.3.6.
-bool ifalert()
-{
-	
-}
-//end of the function
-
-//a function to view the records
-void
-//end of this function
 
 void print_menu()
 {
@@ -51,7 +34,7 @@ int main()
 		if(choice=="1")
 		{
 			cout<<"1"<<endl;
-			//add function here
+			add();
 			cout<<endl;
 		}
 		else if(choice=="2")
@@ -70,6 +53,18 @@ int main()
 		{
 			cout<<"4"<<endl;
 			
+			cout<<endl;
+		}
+		else if(choice=="5")
+		{
+			cout<<"5"<<endl;
+			//add function here
+			cout<<endl;
+		}
+		else if (choice=="6")
+		{
+			cout<<"6"<<endl;
+			//add function here
 			cout<<endl;
 		}
 		else
