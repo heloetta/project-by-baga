@@ -1,5 +1,5 @@
-#ifndef ADD_H
-#define ADD_H
+#ifndef VIEW_H
+#define VIEW_H
 #include<iostream>
 #include<string>
 #include "Record.h"

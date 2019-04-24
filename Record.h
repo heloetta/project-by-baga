@@ -2,7 +2,6 @@
 #define RECORD_H
 #include<iostream>
 #include<fstream>
-#include"Record.h"
 #include<string>
 using namespace std;
 class Record

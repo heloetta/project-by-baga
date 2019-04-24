@@ -18,7 +18,7 @@ void add()
 	}
 	cout<<"amount: ";
 	cin>>OneR.amount;
-	cout<<"date(ddmmyyyy): ";
+	cout<<"date(yyyymmdd): ";
 	cin>>OneR.date;
 	cout<<"type\n(1.food 2.rent 3.salary 4.game 5.transportation 6.transfer 7.other): ";
 	cin>>OneR.type;

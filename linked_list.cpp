@@ -6,7 +6,7 @@
 using namespace std;
 //these are all functiuons copied from the guide notes of Module 8
 
-void insert(Node * after, Record insert_record,sort_parameter)
+void insert(Node * after, Record insert_record,double sort_parameter)
 {
 	Node * p = new Node;
 	p->info = insert_record;

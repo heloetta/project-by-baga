@@ -3,10 +3,15 @@
 #include<string>
 #include "Record.h"
 #include "add.h"
+#include "linked_list.h"
+#include "view.h"
+#include <iomanip>
+#include <sstream>
 using namespace std;
 
 void print_menu()
 {
+	cout<<"$$$$$$$$$$"<<endl;
 	cout<<"MAIN MENU:"<<endl;
 	cout<<"1.add new records"<<endl;
 	cout<<"2.edit records"<<endl;
@@ -33,7 +38,7 @@ int main()
 	{
 		if(choice=="1")
 		{
-			cout<<"1"<<endl;
+			cout<<"1.add new records"<<endl;
 			add();
 			cout<<endl;
 		}
@@ -51,8 +56,8 @@ int main()
 		}
 		else if(choice == "4")
 		{
-			cout<<"4"<<endl;
-			
+			cout<<"4.view records"<<endl;
+			view();
 			cout<<endl;
 		}
 		else if(choice=="5")
