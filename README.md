@@ -18,7 +18,7 @@
         record
         view
      -advanced functions
-        1.exchange rate
-        2.analysis of financial state
+        1.analysis of financial state
         monthly income/monthly outcome/percentage of types/(consumption graph?)
-        3.budget setting(alert)
+        2.budget setting
+        3.alert
