@@ -25,9 +25,11 @@ void edit(int ID){
             int counter=0;
             int choice;
             cout<<"Edit\n(1.date 2.IO 3.type 4.account 5.amount 6.remark)"<<endl;
-            cin>>choice>>endl;
-            count<<"Enter the edited value"<<endl;
-            cin>>ed<<endl;
+            cin>>choice;
+	    cout<<endl;
+            cout<<"Enter the edited value"<<endl;
+            cin>>ed;
+	    cout<<endl;
             string a[100];
             while(line_in>>word){
             counter++;
