@@ -16,4 +16,11 @@ public:
 //e.g. 1.Alipay 2.cash 3.credit card .......
 	string remark;
 };
+class Node
+{
+public:
+	Record info;
+	Node * next;
+	int ID;
+};
 #endif
