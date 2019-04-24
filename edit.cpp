@@ -27,10 +27,10 @@ void edit(int ID){
             cout<<"Edit\n(1.date 2.IO 3.type 4.account 5.amount 6.remark)"<<endl;
             cin>>choice>>endl;
             count<<"Enter the edited value"<<endl;
-            cin>>ed>>endl;
+            cin>>ed<<endl;
             string a[100];
             while(line_in>>word){
-            counter++
+            counter++;
             a[counter]=word;
             if(counter == choice){
             a[counter]=ed;
