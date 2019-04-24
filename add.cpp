@@ -8,6 +8,7 @@ using namespace std;
 void add()
 {
 	
+	Record OneR;
 	ofstream fout;
 	fout.open("records.txt",ios::app);
 	if(fout.fail())
@@ -16,17 +17,17 @@ void add()
 		exit(1);
 	}
 	cout<<"amount: ";
-	cin>>Record.amount;
+	cin>>OneR.amount;
 	cout<<"date(ddmmyyyy): ";
-	cin>>Record.date;
+	cin>>OneR.date;
 	cout<<"type:\n(1.food 2.rent 3.other) ";
-	cin>>Record.type;
+	cin>>OneR.type;
 	cout<<"income or expense:\n(0.income 1.expense) ";
-	cin>>Record.IO;
+	cin>>OneR.IO;
 	cout<<"account:\n(1.Alipay 2.cash 3.credit card)";
-	cin>>Record.account;
+	cin>>OneR.account;
 	cout<<"remark: ";
-	cin>>Record.remark;
-	fout<<Record.date<<"&"<<Record.IO<<"&"<<Record.type<<"&"<<Record.amount<<"&"<<Record.remark<<endl;
+	cin>>OneR.remark;
+	fout<<OneR.date<<"&"<<OneR.IO<<"&"<<OneR.type<<"&"<<OneR.account<<"&"<<OneR.amount<<"&"<<OneR.remark<<endl;
 	fout.close();
 }
