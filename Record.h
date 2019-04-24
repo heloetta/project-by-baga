@@ -22,5 +22,6 @@ class Node
 public:
 	Record info;
 	Node * next;
+	double sort_p;
 };
 #endif

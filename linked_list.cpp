@@ -6,10 +6,11 @@
 using namespace std;
 //these are all functiuons copied from the guide notes of Module 8
 
-void insert(Node * after, Record insert_record)
+void insert(Node * after, Record insert_record,sort_parameter)
 {
 	Node * p = new Node;
-	p->info = insert_record
+	p->info = insert_record;
+	p->sort_p = sort_parameter;
 	p->next=after->next;
 	after->next = p;
 }
@@ -45,11 +46,19 @@ void tail_insert(Node * & head,Node * & tail ,Record NextRecord)
 	if(head == NULL )
 	{
 		head=p;
-		tail=p
+		tail=p;
 	}
 	else
 	{
 		tail->next=p;
 		tail = p;
 	}
+}
+void head_insert(Node * & head,Record NextRecord,double sort_parameter)
+{
+	Node * p = new Node;
+	p->info = NextRecord;
+	p->next = head;
+	p->sort_p = sort_parameter;
+	head=p;
 }
