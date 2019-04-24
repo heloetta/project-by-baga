@@ -3,6 +3,7 @@
 #include "Record.h"
 #include<fstream>
 #include "view.h"
+#include "linked_list.h"
 #include<iomanip>
 #include<sstream>
 using namespace std;
@@ -33,16 +34,16 @@ void view()
 	}
 	string line;
 	Node * head = NULL,* after_this;
+	//get the sort parameter
 	int sort_id=1;
+	cout<<"view by what?\n1.date 2.income or expense 3.type 4.account 5.amount: ";
+	int sort_choice;
+	cin>>sort_choice;
 	while(getline(fin,line))
 	{
 		istringstream iss(line);
 		Record FinRecord;
 		iss>>FinRecord.ID>>FinRecord.date>>FinRecord.IO>>FinRecord.type>>FinRecord.account>>FinRecord.amount>>FinRecord.remark;
-		//get the sort parameter
-		cout>>"view by what?\n1.date 2.income or expense 3.type 4.account 5.amount: " 
-		int sort_choice;
-		cin>>sort_choice;
 		double sort_pa;
 		switch(sort_choice)
 		{
@@ -63,7 +64,7 @@ void view()
 			break;
 		}
 		//build a sorted linked list
-		after_this = find_prev(head,num);
+		after_this = find_prev(head,sort_pa);
 		if(after_this == NULL)
 			head_insert(head,FinRecord,sort_pa);
 		else
@@ -79,7 +80,7 @@ void view()
 		cout<<"Error in file opening when viewing fout"<<endl;
 		exit(1);
 	}
-	cout<<"******************************************************************"<<endl<<endl;
+	cout<<"***************************************************************************"<<endl<<endl;
 	cout<<setw(5)<<"ID"<<setw(9)<<"date"<<" income/expense"<<setw(15)<<"type";
 	cout<<setw(15)<<"account"<<setw(9)<<"amount"<<" remark"<<endl;
 	Node * current = head;
@@ -87,7 +88,7 @@ void view()
 	{
 		Record t = current->info;
 		t.ID=sort_id;
-		cout<<setw(5)<<t.ID<<setw(9)<<t.date;
+		cout<<setw(5)<<t.ID<<" "<<setw(8)<<t.date;
 		switch(t.IO)
 		{
 		case 0:
@@ -96,6 +97,7 @@ void view()
 		case 1:
 			cout<<setw(15)<<"expense";
 			break;
+		}
 		switch(t.type)
 		{
 		case 1:
@@ -141,11 +143,12 @@ void view()
 			cout<<setw(15)<<"other";
 			break;
 		}
-		cout<<" "<<t.remark;
+		cout<<setw(9)<<t.amount;
+		cout<<" "<<t.remark<<endl;
 		fout<<t.ID<<" "<<t.date<<" "<<t.IO<<" "<<t.type<<" "<<t.account<<" "<<t.amount<<" "<<t.remark<<endl;
 		current = current->next;
 		sort_id ++;
 	}
-	cout<<endl<<"*****************************************************************"<<endl
+	cout<<endl<<"****************************************************************************"<<endl;
 	fout.close();
 }
