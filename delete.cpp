@@ -5,7 +5,8 @@
 #include"Record.h"
 using namespace std;
 void deleteline(int ID){
-    cin>>ID>>endl;
+    cin>>ID;
+    cout<<endl;
     string filename = "records.txt";
 	  ifstream fin( filename.c_str() );
     if ( fin.fail() ){
@@ -21,7 +22,7 @@ void deleteline(int ID){
         int id;
 	      line_in >> id;
         if(id==ID){
-        b[counter]="";
+        b[linecounter]="";
         }
        linecounter++;
    }
