@@ -15,12 +15,12 @@ public:
 	int account;//for better match.use int to stand for certain string
 //e.g. 1.Alipay 2.cash 3.credit card .......
 	string remark;
+	int ID;
 };
 class Node
 {
 public:
 	Record info;
 	Node * next;
-	int ID;
 };
 #endif
