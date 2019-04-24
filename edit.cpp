@@ -3,9 +3,11 @@
 #include<fstream>
 #include<string>
 #include"Record.h"
+#include"edit.h"
 using namespace std;
 void edit(int ID){
-    cin>>ID>>endl;
+    cin>>ID;
+    cout<<endl;
     string filename = "records.txt";
 	  ifstream fin( filename.c_str() );
     if ( fin.fail() ){
