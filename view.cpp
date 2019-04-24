@@ -124,8 +124,24 @@ void view()
 		{
 		case 1:
 			cout<<setw(15)<<"Alipay";
-			
+			break;
+		case 2:
+			cout<<setw(15)<<"cash";
+			break;
+		case 3:
+			cout<<setw(15)<<"credit card";
+			break;
+		case 4:
+			cout<<setw(15)<<"Octopus";
+			break;
+		case 5:
+			cout<<setw(15)<<"Wechat Pay";
+			break;
+		case 6:
+			cout<<setw(15)<<"other";
+			break;
 		}
+		cout<<" "<<t.remark;
 		fout<<t.ID<<" "<<t.date<<" "<<t.IO<<" "<<t.type<<" "<<t.account<<" "<<t.amount<<" "<<t.remark<<endl;
 		current = current->next;
 		sort_id ++;

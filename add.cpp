@@ -24,7 +24,7 @@ void add()
 	cin>>OneR.type;
 	cout<<"income or expense\n(0.income 1.expense): ";
 	cin>>OneR.IO;
-	cout<<"account\n(1.Alipay 2.cash 3.credit card 4.Octopus 5.Wechat_Pay 6.other): ";
+	cout<<"account\n(1.Alipay 2.cash 3.credit card 4.Octopus 5.Wechat Pay 6.other): ";
 	cin>>OneR.account;
 	cout<<"remark(please do not use space): ";
 	cin>>OneR.remark;
