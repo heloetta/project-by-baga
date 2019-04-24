@@ -20,14 +20,14 @@ void add()
 	cin>>OneR.amount;
 	cout<<"date(ddmmyyyy): ";
 	cin>>OneR.date;
-	cout<<"type:\n(1.food 2.rent 3.other) ";
+	cout<<"type\n(1.food 2.rent 3.other): ";
 	cin>>OneR.type;
-	cout<<"income or expense:\n(0.income 1.expense) ";
+	cout<<"income or expense\n(0.income 1.expense): ";
 	cin>>OneR.IO;
-	cout<<"account:\n(1.Alipay 2.cash 3.credit card)";
+	cout<<"account\n(1.Alipay 2.cash 3.credit card): ";
 	cin>>OneR.account;
-	cout<<"remark: ";
+	cout<<"remark(please do not use space): ";
 	cin>>OneR.remark;
-	fout<<OneR.date<<"&"<<OneR.IO<<"&"<<OneR.type<<"&"<<OneR.account<<"&"<<OneR.amount<<"&"<<OneR.remark<<endl;
+	fout<<"0 "<<OneR.date<<" "<<OneR.IO<<" "<<OneR.type<<" "<<OneR.account<<" "<<OneR.amount<<" "<<OneR.remark<<endl;
 	fout.close();
 }
