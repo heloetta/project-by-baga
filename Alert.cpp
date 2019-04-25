@@ -3,13 +3,14 @@
 #include<string>
 #include<sstream>
 #include"Alert.h"
+#include"Record.h"
 using namespace std;
 void alert(){
     cout<<"Set your budget"<<endl;
     int max;
     cin>>max;
     cout<<endl;
-    string filename = "records.txt"
+    string filename = "records.txt";
     ifstream fin( filename.c_str() );
     if ( fin.fail() ){
 		cout << "Error in file opening!" << endl;
