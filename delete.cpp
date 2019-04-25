@@ -4,7 +4,8 @@
 #include<string>
 #include"Record.h"
 using namespace std;
-void deleteline(int ID){
+void deleteline(){
+    int ID;
     cin>>ID;
     cout<<endl;
     string filename = "records.txt";
