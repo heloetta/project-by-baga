@@ -7,7 +7,7 @@
 #include<iomanip>
 #include<sstream>
 using namespace std;
-void edit()
+void deleteline()
 {
 	int ide;
 	cin>>ide;
