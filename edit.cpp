@@ -5,7 +5,8 @@
 #include"Record.h"
 #include"edit.h"
 using namespace std;
-void edit(int ID){
+void edit(){
+    int ID;
     cin>>ID;
     cout<<endl;
     string filename = "records.txt";
