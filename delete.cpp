@@ -24,6 +24,7 @@ void deleteline()
 	//get the sort parameter
 	int sort_id=1;
 	int sort_choice;
+	cout<<"view by what?\n1.date 2.income or expense 3.type 4.account 5.amount: ";
 	cin>>sort_choice;
 	while(getline(fin,line))
 	{
