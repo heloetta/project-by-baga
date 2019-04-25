@@ -10,4 +10,5 @@ void delete_node(Node * after);//assume that after not equal null
 void delete_list(Node * & head);
 void tail_insert(Node * & head,Node * & tail,int num);//look at ppt p75
 void head_insert(Node * & head,Record NextRecord,double sort_parameter);
+Node * find_prev(Node * head,double sort_parameter);
 #endif

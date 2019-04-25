@@ -62,3 +62,20 @@ void head_insert(Node * & head,Record NextRecord,double sort_parameter)
 	p->sort_p = sort_parameter;
 	head=p;
 }
+
+Node * find_prev(Node * head,double sort_parameter)
+{
+	if(head == NULL || head->sort_p >= sort_parameter)
+		return NULL;
+	Node * current = head;
+	while (current->next != NULL)
+	{
+		if(current->next->sort_p >= sort_parameter)
+			return current;
+		else
+			current=current->next;
+	}
+	return  current;
+}
+
+
