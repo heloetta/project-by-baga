@@ -60,7 +60,7 @@ void edit()
 	//end of reading from file
 	//cout and fout (cover the original txt)
         int choice,ed;
-	string word
+	string word;
         cout<<"Edit\n(1.date 2.IO 3.type 4.account 5.amount 6.remark)"<<endl;
         cin>>choice;
 	cout<<endl;
