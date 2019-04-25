@@ -41,6 +41,7 @@ void edit(){
             a[counter]=ed;
             }
             }
+	    counter=0;
             for(int i=0;i<=6;i++){
             b[linecounter]=b[linecounter]+a[i]+" ";
             }
