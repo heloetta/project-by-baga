@@ -5,6 +5,8 @@
 #include "add.h"
 #include "linked_list.h"
 #include "view.h"
+#include "edit.h"
+#include "delete.h"
 #include <iomanip>
 #include <sstream>
 using namespace std;
@@ -44,14 +46,14 @@ int main()
 		}
 		else if(choice=="2")
 		{
-			cout<<"2"<<endl;
-			//add function here
+			cout<<"2.edit record"<<endl;
+			edit();
 			cout<<endl;
 		}
 		else if(choice == "3")
 		{
-			cout<<"3"<<endl;
-			//add function here
+			cout<<"3.delete record"<<endl;
+			deleteline();
 			cout<<endl;
 		}
 		else if(choice == "4")
