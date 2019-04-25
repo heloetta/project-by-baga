@@ -75,12 +75,12 @@ void deleteline()
 	{
 		Record t = current->info;
 		t.ID=sort_id;
-		cout<<setw(5)<<t.ID<<" "<<setw(8)<<t.date;
-	        if(t.ID==ide){
+		if(t.ID==ide){
 		current=current->next;
 	        sort_id++;
 		continue;
 		}
+		cout<<setw(5)<<t.ID<<" "<<setw(8)<<t.date;
 		switch(t.IO)
 		{
 		case 0:
