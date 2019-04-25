@@ -1,4 +1,4 @@
 #ifndef EDIT_H
 #define EDIT_H
-void edit(int);
+void edit();
 #endif
