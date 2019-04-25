@@ -60,7 +60,6 @@ void deleteline()
 	fin.close();
 	//end of reading from file
 	//cout and fout (cover the original txt)
-        cout<<"Delete\n(1.date 2.IO 3.type 4.account 5.amount 6.remark)"<<endl;
 	ofstream fout;
 	fout.open("records.txt");
 	if(fout.fail())
