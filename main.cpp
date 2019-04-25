@@ -7,6 +7,7 @@
 #include "view.h"
 #include "edit.h"
 #include "delete.h"
+#include "Alert.h"
 #include <iomanip>
 #include <sstream>
 #include "analyse.h"
@@ -71,8 +72,8 @@ int main()
 		}
 		else if (choice=="6")
 		{
-			cout<<"6"<<endl;
-			//add function here
+			cout<<"6.set your budget"<<endl;
+			alert();
 			cout<<endl;
 		}
 		else
