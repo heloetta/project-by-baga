@@ -2,7 +2,7 @@
 #include<string>
 #include "Record.h"
 #include<fstream>
-#include "edit.h"
+#include "delete.h"
 #include "linked_list.h"
 #include<iomanip>
 #include<sstream>
