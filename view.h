@@ -6,6 +6,7 @@
 #include"linked_list.h"
 #include<sstream>
 #include<iomanip>
+#include<fstream>
 using namespace std;
 void view();
 #endif

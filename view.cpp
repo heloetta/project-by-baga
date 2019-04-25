@@ -7,22 +7,6 @@
 #include<iomanip>
 #include<sstream>
 using namespace std;
-//the following function is used when building a sorted list
-Node * find_prev(Node * head,double sort_parameter)
-{
-	if(head == NULL || head->sort_p >= sort_parameter)
-		return NULL;
-	Node * current = head;
-	while (current->next != NULL)
-	{
-		if(current->next->sort_p >= sort_parameter)
-			return current;
-		else
-			current = current->next;
-	}
-	return current;
-}
-
 void view()
 {
 	ifstream fin;
