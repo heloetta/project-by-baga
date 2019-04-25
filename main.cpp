@@ -9,6 +9,7 @@
 #include "delete.h"
 #include <iomanip>
 #include <sstream>
+#include "analyse.h"
 using namespace std;
 
 void print_menu()
@@ -64,8 +65,8 @@ int main()
 		}
 		else if(choice=="5")
 		{
-			cout<<"5"<<endl;
-			//add function here
+			cout<<"5.analyze financial state"<<endl;
+			analyse();
 			cout<<endl;
 		}
 		else if (choice=="6")
