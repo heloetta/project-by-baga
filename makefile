@@ -18,9 +18,12 @@ view.o:view.cpp view.h linked_list.h Record.h
 
 analyse.o:analyse.cpp linked_list.h Record.h analyse.h
 	g++ -c $<
-
-main:main.o add.o edit.o delete.o linked_list.o view.o analyse.o
+	
+Alert.o:Alert.cpp Alert.h Record.h
+	g++ -c $<
+	
+main:main.o add.o edit.o delete.o linked_list.o view.o analyse.o Alert.o
 	g++ $^ -o $@
 
 clean:
-	rm main.o add.o edit.o delete.o linked_list.o view.o analyse.o main
+	rm main.o add.o edit.o delete.o linked_list.o view.o analyse.o Alert.o main
