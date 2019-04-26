@@ -38,15 +38,39 @@ void edit()
 	fin.close();
 	//end of reading from file
 	//cout and fout (cover the original txt)
-        int choice,ed;
-	string word;
-        cout<<"Edit what?\n1.date 2.IO 3.type 4.account 5.amount 6.remark: ";
-        cin>>choice;
-        cout<<"Enter the edited value: ";
-	if(choice!=6)
-        cin>>ed;
-	else
-	cin>>word;
+	int choice;
+	int edit_int;
+	double edit_double;
+	string edit_string;
+	cout<<"Edit what?\n1.date 2.income or expense 3.type 4.account 5.amount 6.remark: ";
+	cin>>choice;
+	switch(choice)
+	{
+	case 1:
+		cout<<"Enter the edited date(yyyymmdd): ";
+		cin>>edit_int;
+		break;
+	case 2:
+		cout<<"Edit:income or expense\n(0.income 1.expense): ";
+		cin>>edit_int;
+		break;
+	case 3:
+		cout<<"Enter the edited type\n(1.food 2.rent 3.salary 4.game 5.transportation 6.transfer 7.other): ";
+		cin>>edit_int;
+		break;
+	case 4:
+		cout<<"Enter the edited account\n(1.Alipay 2.cash 3.credit card 4.Octopus 5.Wechat Pay 6.other): ";
+		cin>>edit_int;
+		break;
+	case 5:
+		cout<<"Enter the edited amount: ";
+		cin>>edit_double;
+		break;
+	case 6:
+		cout<<"Enter the edited remark\n(please do not use space): ";
+		cin>>edit_string;
+		break;
+	}
 	ofstream fout;
 	fout.open("records.txt");
 	if(fout.fail())
@@ -58,27 +82,27 @@ void edit()
 	while (current != NULL )
 	{
 		Record t = current->info;
-	        if(t.ID==ide)
+		if(t.ID==ide)
 		{
 			switch(choice)
 			{
 			case 1:
-				t.date=ed;
+				t.date=edit_int;
 				break;
 			case 2:
-				t.IO=ed;
+				t.IO=edit_int;
 				break;
 			case 3:
-				t.type=ed;
+				t.type=edit_int;
 				break;
 			case 4:
-				t.account=ed;
+				t.account=edit_int;
 				break;
 			case 5:
-				t.amount=ed;
+				t.amount=edit_double;
 				break;
 			case 6:
-				t.remark=word;
+				t.remark=edit_string;
 				break;	
 			}
 		}

@@ -9,7 +9,7 @@ class Record
 public:
 	double amount;
 	int date;
-	int type;//the same as account:wq
+	int type;//the same as account
 	bool IO;
 	int account;//for better match.use int to stand for certain string
 //e.g. 1.Alipay 2.cash 3.credit card .......

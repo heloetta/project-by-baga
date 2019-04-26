@@ -22,7 +22,7 @@ void print_menu()
 	cout<<"3.delete records"<<endl;
 	cout<<"4.view records"<<endl;
 	cout<<"5.analyze financial state"<<endl;
-	cout<<"6.burget setting"<<endl;
+	cout<<"6.check burget for this month"<<endl;
 	cout<<"0.quit"<<endl;
 	cout<<"Please enter the number you choose: ";
 }
@@ -81,7 +81,7 @@ int main()
 		}
 		else if (choice=="6")
 		{
-			cout<<"6.set your budget"<<endl;
+			cout<<"6.check burget for this month"<<endl;
 			alert();
 			cout<<endl;
 		}
