@@ -10,7 +10,7 @@ using namespace std;
 void deleteline()
 {
 	int ide;
-	cout<<"delete which line\nplease enter the ID of the record: ";
+	cout<<"delete which record\nplease enter the ID of the record: ";
 	cin>>ide;
 	ifstream fin;
 	fin.open("records.txt");

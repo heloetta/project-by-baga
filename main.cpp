@@ -38,30 +38,39 @@ int main()
 	print_menu();
 	cin>>choice;
 	cout<<endl;
+	bool ifv=false;//only view before can then edit or delete
 	while(choice!="0")
 	{
 		if(choice=="1")
 		{
 			cout<<"1.add new records"<<endl;
 			add();
+			ifv=false;
 			cout<<endl;
 		}
 		else if(choice=="2")
 		{
 			cout<<"2.edit record"<<endl;
-			edit();
+			if(ifv)
+				edit();
+			else
+				cout<<"Please view before edit a record"<<endl;
 			cout<<endl;
 		}
 		else if(choice == "3")
 		{
 			cout<<"3.delete record"<<endl;
-			deleteline();
+			if(ifv)
+				deleteline();
+			else
+				cout<<"Please view before delete a record"<<endl;
 			cout<<endl;
 		}
-		else if(choice == "4")
+		else if(choice == "4")//only view assign id
 		{
 			cout<<"4.view records"<<endl;
 			view();
+			ifv=true;
 			cout<<endl;
 		}
 		else if(choice=="5")
