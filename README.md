@@ -51,4 +51,3 @@ We want to make an accounting system to help ourselves to better manage our mone
    - this function will ask users to input today's date and the burget for this month and judge if the users need to save money linerly.It will print "WARNING!SAVE YOUR MONEY" or "safe".
 0. quit
    - quit the accounting system
-   
