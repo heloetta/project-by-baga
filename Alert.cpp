@@ -71,4 +71,5 @@ void alert()
 		cout<<"WARNING!SAVE YOUR MONEY!"<<endl;
 	else
 		cout<<"safe"<<endl;
+	delete_list(head);
 }
