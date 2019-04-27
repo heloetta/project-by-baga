@@ -1,13 +1,11 @@
 # project-by-baga
-# :smiley:
-:hammer:
-# :trollface::horse:
 ## This is a 1340 project
 ## We are going to build an Accounting System
 ## Problem statement
 - Problem cause
-We want to make an accounting system to help ourselves to better manage our money.
-
+## We want to make an accounting system to help ourselves to better manage our money.Lower is a brief introduction
+- Basically you add, delete and edit records.We use sort function in "view" function so you can clearly see the id of each record.(placed at the front of each record)
+- We also set
      
          
 ## Problem settings
