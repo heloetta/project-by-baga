@@ -42,4 +42,21 @@
    - quit the accounting system
 
 ## input/output specifications
+- input specification
+  1. choice
+     - Whenever the system ask the user to make a choice ,just input the number of the choice,e.g. 1
+  2. remark 
+     - just input a string but no space or tab is allowed
+     - if no remark,just input NA
+  3. date
+     - the system will instruct the user the format of the input date.For example,if it shows yyyymmdd the user can input 20190101
+  4. amount
+     - just input a number
+- output specification
+  - file out
+    - all records are stored in records.txt with ID,date,income or expense,type,account,amount,remark.However,income or expense,type,account are stored in form of int(the choiced number)
+  - screen output
+    - we build a very nice interface with instructions of inputs.
+    - after "view the records",all records will be listed like a table.
+
 
