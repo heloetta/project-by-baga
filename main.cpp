@@ -13,7 +13,7 @@
 #include "analyse.h"
 using namespace std;
 
-void print_menu()
+void print_menu()//this function print the main menu of the accounting system
 {
 	cout<<"$$$$$$$$$$"<<endl;
 	cout<<"MAIN MENU:"<<endl;
@@ -21,7 +21,7 @@ void print_menu()
 	cout<<"2.edit records"<<endl;
 	cout<<"3.delete records"<<endl;
 	cout<<"4.view records"<<endl;
-	cout<<"5.analyze financial state"<<endl;
+	cout<<"5.analyse financial state"<<endl;
 	cout<<"6.check burget for this month"<<endl;
 	cout<<"0.quit"<<endl;
 	cout<<"Please enter the number you choose: ";
@@ -38,13 +38,13 @@ int main()
 	print_menu();
 	cin>>choice;
 	cout<<endl;
-	bool ifv=false;//only view before can then edit or delete
+	bool ifv=false;//only view before can then edit or delete,but after 'add' user need to view again before edit or delete
 	while(choice!="0")
 	{
 		if(choice=="1")
 		{
 			cout<<"1.add new records"<<endl;
-			add();
+			add();//add new line of record to the records.txt
 			ifv=false;
 			cout<<endl;
 		}
@@ -52,7 +52,7 @@ int main()
 		{
 			cout<<"2.edit record"<<endl;
 			if(ifv)
-				edit();
+				edit();//edit one content of a record from records.txt;
 			else
 				cout<<"Please view before edit a record"<<endl;
 			cout<<endl;
@@ -61,7 +61,7 @@ int main()
 		{
 			cout<<"3.delete record"<<endl;
 			if(ifv)
-				deleteline();
+				deleteline();//delete a record from records.txt
 			else
 				cout<<"Please view before delete a record"<<endl;
 			cout<<endl;
@@ -69,20 +69,20 @@ int main()
 		else if(choice == "4")//only view assign id
 		{
 			cout<<"4.view records"<<endl;
-			view();
+			view();//view every record after sorted by date/amount/account/income or income/type;
 			ifv=true;
 			cout<<endl;
 		}
 		else if(choice=="5")
 		{
-			cout<<"5.analyze financial state"<<endl;
-			analyse();
+			cout<<"5.analyse financial state"<<endl;
+			analyse();//analyze financial state including monthly/yearly income/outcome/engel's cofficient
 			cout<<endl;
 		}
 		else if (choice=="6")
 		{
 			cout<<"6.check burget for this month"<<endl;
-			alert();
+			alert();//input today's date and user's burget for this month and tell the user whether he needs to save money or not
 			cout<<endl;
 		}
 		else
