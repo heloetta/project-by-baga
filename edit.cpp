@@ -9,7 +9,7 @@
 using namespace std;
 void edit()
 {
-	int ide;
+	int ide;//get the id of the record to be edited
 	cout<<"edit which record?\nplease enter the ID of the record: ";
 	cin>>ide;
 	ifstream fin;
@@ -37,14 +37,13 @@ void edit()
 	}
 	fin.close();
 	//end of reading from file
-	//cout and fout (cover the original txt)
-	int choice;
+	int choice;//get which information to be edited
 	int edit_int;
 	double edit_double;
 	string edit_string;
 	cout<<"Edit what?\n1.date 2.income or expense 3.type 4.account 5.amount 6.remark: ";
 	cin>>choice;
-	switch(choice)
+	switch(choice)//get the edited information
 	{
 	case 1:
 		cout<<"Enter the edited date(yyyymmdd): ";
@@ -71,7 +70,7 @@ void edit()
 		cin>>edit_string;
 		break;
 	}
-	ofstream fout;
+	ofstream fout;//cover the origin txt
 	fout.open("records.txt");
 	if(fout.fail())
 	{
@@ -82,7 +81,7 @@ void edit()
 	while (current != NULL )
 	{
 		Record t = current->info;
-		if(t.ID==ide)
+		if(t.ID==ide)//editing 
 		{
 			switch(choice)
 			{
