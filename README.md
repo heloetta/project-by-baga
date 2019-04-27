@@ -21,7 +21,7 @@
 - Problem cause
      - We want to make an accounting system to help ourselves to better manage our money.     
 
-## functionalities and future
+## functionalities and feature
 1. add new records
    - this function allows users to input all the information expect ID of a new record and then append it into the "record.txt".The default of ID is 0,which is not imported before view.
 2. edit records
@@ -40,3 +40,6 @@
    - this function will ask users to input today's date and the burget for this month and judge if the users need to save money linerly.It will print "WARNING!SAVE YOUR MONEY" or "safe".
 0. quit
    - quit the accounting system
+
+## input/output specifications
+
