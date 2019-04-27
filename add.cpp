@@ -28,6 +28,7 @@ void add()
 	cin>>OneR.account;
 	cout<<"remark(please do not use space): ";
 	cin>>OneR.remark;
+	//the default of ID is 0 which won't cause any mistake as ID will be assigned in the view function
 	fout<<"0 "<<OneR.date<<" "<<OneR.IO<<" "<<OneR.type<<" "<<OneR.account<<" "<<OneR.amount<<" "<<OneR.remark<<endl;
 	fout.close();
 }

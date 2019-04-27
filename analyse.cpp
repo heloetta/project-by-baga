@@ -17,7 +17,7 @@ void analyse()
 	}
 	string line;
 	Node * head = NULL,* after_this;
-	while(getline(fin,line))
+	while(getline(fin,line))//transfer line into class Record
 	{
 		istringstream iss(line);
 		Record FR;
@@ -33,7 +33,7 @@ void analyse()
 	fin.close();
 	cout<<"what do you want to analyse\n1.monthly income 2.monthly expense 3.monthly engel's cofficient\n4.yearly income 5.yearly expense 6.yearly engel's cofficient\nEnter your choice: ";
 	int analyse_what;
-	cin>>analyse_what;//get what the user want
+	cin>>analyse_what;//get what the user want to analyse
 	double sum_of_expense=0,sum_of_food=0,sum_of_income=0;
 	int inputTime,start,end;//start00<date<end00
 	cout<<"For which ";
@@ -74,6 +74,7 @@ void analyse()
 		}
 		current=current->next;
 	}
+	//screen output
 	switch(analyse_what)
 	{
 	case 1:
@@ -112,8 +113,3 @@ void analyse()
 	}
 	delete_list(head);
 }
-
-
-
-
-

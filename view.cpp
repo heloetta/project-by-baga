@@ -21,11 +21,11 @@ void view()
 	//get the sort parameter
 	int sort_id=1;
 	cout<<"view by what?\n1.date 2.income or expense 3.type 4.account 5.amount: ";
-	int sort_choice;
+	int sort_choice;//sort by user's choice
 	cin>>sort_choice;
 	while(getline(fin,line))
 	{
-		istringstream iss(line);
+		istringstream iss(line);//transfer line to class Record
 		Record FinRecord;
 		iss>>FinRecord.ID>>FinRecord.date>>FinRecord.IO>>FinRecord.type>>FinRecord.account>>FinRecord.amount>>FinRecord.remark;
 		double sort_pa;

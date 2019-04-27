@@ -9,7 +9,7 @@
 using namespace std;
 void deleteline()
 {
-	int ide;
+	int ide;//to get the id of the record to be deleted
 	cout<<"delete which record\nplease enter the ID of the record: ";
 	cin>>ide;
 	ifstream fin;
@@ -24,7 +24,7 @@ void deleteline()
 	//get the sort parameter
 	while(getline(fin,line))
 	{
-		istringstream iss(line);
+		istringstream iss(line);//transfer line to class Record
 		Record FinRecord;
 		iss>>FinRecord.ID>>FinRecord.date>>FinRecord.IO>>FinRecord.type>>FinRecord.account>>FinRecord.amount>>FinRecord.remark;
 		double sort_pa=FinRecord.ID;
@@ -37,7 +37,7 @@ void deleteline()
 	}
 	fin.close();
 	//end of reading from file
-	//cout and fout (cover the original txt)
+	//cover the original txt
 	ofstream fout;
 	fout.open("records.txt");
 	if (fout.fail())
